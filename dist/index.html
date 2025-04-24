@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="84bb4fc080631c2605f1.css">
     <title></title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>testes testes</h1>
+    <div class="container">
+        <h1>Whether it's Weather</h1>
+        <form action="" id="loc-form">
+            <label for="loc-input">
+                Enter Address, ZIP, or lat/long
+                <input type="text" id="loc-input" name="loc-input">
+            </label>
+            <button id="submit-search">Search</button>
+        </form>
+        <div class="display-data">
+            <div class="display-card">
+                <h3 class="title">Current Conditions</h3>
+                <h1 class="temp" id="current-temp"></h1>
+                <h2 class="conditions" id="current-cond"></h2>
+            </div>
+            <div class="display-card">
+                <h3 class="title">Today's Forecast</h3>
+                <h5 class="title">High</h5>
+                <h1 class="temp" id="high-temp"></h1>
+                <h5 class="title">Low</h5>
+                <h1 class="temp" id="low-temp"></h1>
+                <h5 class="conditions">Conditions</h5>
+                <h3 class="temp" id="forecast-cond"></h3>
+            </div>
+            <div class="display-card">
+            </div>
+            <div class="display-card">
+            </div>
+            <div class="display-card">
+                <h3 class="title">Tomorrow</h3>
+                <h1 class="temp" id="tmrw-temp-range"></h1>
+                <h3 class="conditions" id="tmrw-cond"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="ef3fe5e01f12bda6cadc.js" type="module"></script>
 </body>
 </html>

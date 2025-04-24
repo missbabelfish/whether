@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title></title>
 </head>
 <body>
-    <h1>testes testes</h1>
+    <div class="container">
+        <h1>Whether it's Weather</h1>
+        <form action="" id="loc-form">
+            <label for="loc-input">
+                Enter Address, ZIP, or lat/long
+                <input type="text" id="loc-input" name="loc-input">
+            </label>
+            <button id="submit-search">Search</button>
+        </form>
+        <fieldset id="unit-select">
+            <legend>
+                Select display units:
+            </legend>
+            <label for="fahrenheit">
+                Fahrenheit
+                <input type="radio" id="fahrenheit" name="units" value="fahrenheit" checked>
+            </label>
+            <label for="celsius">
+                Celsius
+                <input type="radio" id="celsius" name="units" value="celsius">
+            </label>
+        </fieldset>
+        <div class="display-data">
+            <div class="display-card">
+                <h3 class="title">Current Conditions</h3>
+                <h1 class="temp" id="current-temp"></h1>
+                <h2 class="conditions" id="current-cond"></h2>
+            </div>
+            <div class="display-card">
+                <h3 class="title">Today's Forecast</h3>
+                <h5 class="title">High</h5>
+                <h1 class="temp" id="high-temp"></h1>
+                <h5 class="title">Low</h5>
+                <h1 class="temp" id="low-temp"></h1>
+                <h5 >Conditions</h5>
+                <h3 class="conditions" id="forecast-cond"></h3>
+            </div>
+            <div class="display-card">
+                <h3 class="title">Tomorrow</h3>
+                <h1 class="temp" id="tmrw-temp-range"></h1>
+                <h3 class="conditions" id="tmrw-cond"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
